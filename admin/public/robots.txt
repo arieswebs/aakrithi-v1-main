@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /cart
+Disallow: /add-to-cart
+Disallow: /update-cart
+Disallow: /remove-from-cart
+Disallow: /account
+Disallow: /login
+Disallow: /register
+Disallow: /logout
+Disallow: /checkout
+Disallow: /order/
+
+# Sitemaps
+Sitemap: /sitemap.xml
+
+# Crawl-delay for some bots
+User-agent: bingbot
+Crawl-delay: 5
+
+User-agent: Googlebot
+Allow: /
