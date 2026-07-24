@@ -257,7 +257,7 @@ export default function Landing() {
                                 </div>
                                 <div className="glass-card-dark position-absolute bottom-0 start-0 p-4" style={{ zIndex: 3, maxWidth: '300px', transform: 'translateY(20px) translateX(-20px)' }}>
                                     <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '3px', color: 'var(--color-accent)', fontWeight: 700 }}>Featured Process</span>
-                                    <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 400, color: 'var(--color-primary)', marginTop: '0.5rem', marginBottom: '0.5rem' }}>Zari Perfection</h4>
+                                    <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 400, color: '#ffffff', marginTop: '0.5rem', marginBottom: '0.5rem' }}>Zari Perfection</h4>
                                     <p style={{ fontSize: '0.9rem', color: 'rgba(255, 254, 240, 0.8)', margin: 0, lineHeight: 1.5 }}>Hand-tailored by master artisans over days of meticulous focus.</p>
                                 </div>
                             </div>
