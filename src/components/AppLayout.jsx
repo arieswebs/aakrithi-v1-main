@@ -77,7 +77,7 @@ export default function AppLayout({ children }) {
 
     return (
         <div className="min-h-screen d-flex flex-column" style={{ backgroundColor: 'var(--color-background)' }}>
-            {/* Premium Gold Preloader */}
+            {/* Premium Minimalist Preloader */}
             <div 
                 id="global-loader" 
                 style={{
@@ -86,48 +86,21 @@ export default function AppLayout({ children }) {
                     zIndex: 999999,
                     display: 'flex', flexDirection: 'column',
                     alignItems: 'center', justifyContent: 'center',
-                    background: 'var(--color-primary)',
-                    transition: 'opacity 0.3s ease, visibility 0.3s ease',
+                    background: 'var(--color-surface, #FDF8F1)',
+                    transition: 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
                     opacity: loading ? 1 : 0,
                     visibility: loading ? 'visible' : 'hidden',
                     pointerEvents: loading ? 'all' : 'none'
                 }}
             >
-                <div className="loader-brand" style={{
-                    position: 'relative', display: 'flex',
-                    alignItems: 'center', justifyContent: 'center',
-                    width: '140px', height: '140px', marginBottom: '2.5rem'
+                <div style={{
+                    animation: 'pulse-opacity 2s ease-in-out infinite',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '1rem'
                 }}>
-                    <div className="loader-ring" style={{
-                        position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
-                        border: '2px solid transparent',
-                        borderTopColor: '#C5A059', borderBottomColor: '#C5A059',
-                        borderRadius: '50%',
-                        animation: 'spin 2s cubic-bezier(0.25, 1, 0.5, 1) infinite',
-                        opacity: 0.8
-                    }}></div>
-                    <div className="loader-ring-inner" style={{
-                        position: 'absolute', top: '10px', left: '10px',
-                        width: 'calc(100% - 20px)', height: 'calc(100% - 20px)',
-                        border: '1px solid transparent',
-                        borderLeftColor: 'rgba(197, 160, 89, 0.15)', borderRightColor: 'rgba(197, 160, 89, 0.15)',
-                        borderRadius: '50%',
-                        animation: 'spin-reverse 2.5s cubic-bezier(0.25, 1, 0.5, 1) infinite'
-                    }}></div>
-                    <div className="loader-logo-text" style={{
-                        zIndex: 2,
-                        animation: 'pulse-logo 2s ease-in-out infinite'
-                    }}>
-                        <img src="/images/new_logo.png" alt="Aakrithi Logo" style={{ height: '36px', width: 'auto', display: 'block', margin: '0 auto' }} />
-                    </div>
-                </div>
-                <div className="loader-text" style={{
-                    color: 'rgba(197, 160, 89, 0.6)', fontSize: '0.8rem',
-                    letterSpacing: '6px', textTransform: 'uppercase',
-                    fontWeight: 400, animation: 'pulse-logo 2s ease-in-out infinite',
-                    paddingLeft: '5px'
-                }}>
-                    EST. 2024
+                    <img src="/images/new_logo.png" alt="Aakrithi Logo" style={{ height: '42px', width: 'auto', display: 'block', filter: 'brightness(0.1)' }} />
                 </div>
             </div>
 

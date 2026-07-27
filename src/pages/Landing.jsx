@@ -109,7 +109,7 @@ export default function Landing() {
                             </div>
 
                             <h1 
-                                className="text-reveal delay-300 hero-royal-title"
+                                className="text-reveal delay-300 hero-royal-title hero-royal-title-premium"
                                 style={{
                                     fontFamily: 'var(--font-serif)',
                                     fontSize: 'clamp(3.8rem, 7vw, 6.5rem)',
@@ -117,8 +117,7 @@ export default function Landing() {
                                     letterSpacing: '0.08em',
                                     lineHeight: 1.05,
                                     textTransform: 'uppercase',
-                                    marginBottom: '1.2rem',
-                                    color: '#C5A059'
+                                    marginBottom: '1.2rem'
                                 }}
                             >
                                 Aakrithi
@@ -165,15 +164,15 @@ export default function Landing() {
                             {/* Trust Stats Bar */}
                             <div className="row g-3 pt-4 text-reveal delay-700 mx-auto mx-lg-0" style={{ borderTop: '1px solid rgba(197, 160, 89, 0.35)', maxWidth: '540px' }}>
                                 <div className="col-4">
-                                    <h4 className="hero-stat-number" style={{ color: '#C5A059', fontFamily: 'var(--font-serif)', fontSize: '1.8rem', fontWeight: 500, margin: 0 }}>100%</h4>
+                                    <h4 className="hero-stat-number-premium">100%</h4>
                                     <p className="hero-stat-label" style={{ color: 'rgba(44, 30, 22, 0.65)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', margin: 0, marginTop: '4px' }}>Artisanal Sourced</p>
                                 </div>
                                 <div className="col-4">
-                                    <h4 className="hero-stat-number" style={{ color: '#C5A059', fontFamily: 'var(--font-serif)', fontSize: '1.8rem', fontWeight: 500, margin: 0 }}>30+</h4>
+                                    <h4 className="hero-stat-number-premium">30+</h4>
                                     <p className="hero-stat-label" style={{ color: 'rgba(44, 30, 22, 0.65)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', margin: 0, marginTop: '4px' }}>Handcraft Hours</p>
                                 </div>
                                 <div className="col-4">
-                                    <h4 className="hero-stat-number" style={{ color: '#C5A059', fontFamily: 'var(--font-serif)', fontSize: '1.8rem', fontWeight: 500, margin: 0 }}>50+</h4>
+                                    <h4 className="hero-stat-number-premium">50+</h4>
                                     <p className="hero-stat-label" style={{ color: 'rgba(44, 30, 22, 0.65)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '1px', margin: 0, marginTop: '4px' }}>Master Weavers</p>
                                 </div>
                             </div>
@@ -185,21 +184,25 @@ export default function Landing() {
                             <div className="royal-collage-wrapper position-relative mx-auto" style={{ maxWidth: '540px' }}>
                                 
                                 {/* Main Model Showcase Card */}
-                                <div className="royal-card-primary glass-card overflow-hidden position-relative" style={{ borderRadius: '24px', border: '1px solid rgba(197, 160, 89, 0.35)', boxShadow: '0 20px 50px rgba(197, 160, 89, 0.15)' }}>
-                                    <img 
-                                        src="/images/hero_banner.png" 
-                                        alt="Aakrithi Heritage Model Couture" 
-                                        style={{ width: '100%', height: '520px', objectFit: 'cover', objectPosition: 'center top', display: 'block', borderRadius: '24px' }} 
-                                    />
+                                <div className="royal-card-primary premium-frame" style={{ borderRadius: '24px' }}>
+                                    <div className="premium-frame-inner" style={{ borderRadius: 'inherit', height: '100%' }}>
+                                        <img 
+                                            src="/images/hero_banner.png" 
+                                            alt="Aakrithi Heritage Model Couture" 
+                                            style={{ width: '100%', height: '520px', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} 
+                                        />
+                                    </div>
                                 </div>
 
                                 {/* Overlapping Secondary Model Accent Card */}
-                                <div className="royal-card-accent overflow-hidden position-absolute" style={{ width: '220px', height: '280px', bottom: '-30px', left: '-30px', borderRadius: '20px', border: '1px solid rgba(197, 160, 89, 0.4)', boxShadow: '0 15px 35px rgba(0,0,0,0.12)', zIndex: 12 }}>
-                                    <img 
-                                        src="/images/cat_sets.png" 
-                                        alt="Artisanal Floral Silk Saree" 
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', borderRadius: '20px' }} 
-                                    />
+                                <div className="royal-card-accent premium-frame position-absolute" style={{ width: '220px', height: '280px', bottom: '-30px', left: '-30px', borderRadius: '20px', zIndex: 12 }}>
+                                    <div className="premium-frame-inner" style={{ borderRadius: 'inherit', height: '100%' }}>
+                                        <img 
+                                            src="/images/cat_sets.png" 
+                                            alt="Artisanal Floral Silk Saree" 
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} 
+                                        />
+                                    </div>
                                 </div>
 
                             </div>

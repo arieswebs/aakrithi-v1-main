@@ -36,7 +36,7 @@ export default function Boutique() {
                     position: relative;
                     height: calc(100vh - var(--header-height, 70px));
                     min-height: 500px;
-                    background: url('/images/boutique-hero.png') no-repeat center center;
+                    background: url('/images/boutique-light-embroidery.png') no-repeat center center;
                     background-size: cover;
                     display: flex;
                     align-items: center;
@@ -46,15 +46,11 @@ export default function Boutique() {
                 .boutique-hero-overlay {
                     position: absolute;
                     inset: 0;
-                    background: linear-gradient(180deg, rgba(44, 30, 22, 0.3) 0%, rgba(44, 30, 22, 0.8) 70%, var(--color-background) 100%);
+                    background: linear-gradient(to bottom, rgba(253, 248, 241, 0) 0%, rgba(253, 248, 241, 0.85) 100%);
                     z-index: 1;
                 }
                 .hero-border-frame {
-                    position: absolute;
-                    inset: 1rem;
-                    border: 1px solid rgba(197, 160, 89, 0.3);
-                    pointer-events: none;
-                    z-index: 2;
+                    display: none;
                 }
                 @media (min-width: 768px) {
                     .hero-border-frame {
@@ -98,9 +94,9 @@ export default function Boutique() {
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    padding: 2.5rem 2rem;
-                    background: linear-gradient(0deg, rgba(44, 30, 22, 0.95) 0%, rgba(44, 30, 22, 0.6) 60%, rgba(44, 30, 22, 0) 100%);
-                    color: var(--color-primary);
+                    padding: 2rem;
+                    background: linear-gradient(to top, rgba(44, 30, 22, 0.95) 0%, rgba(44, 30, 22, 0.6) 60%, transparent 100%);
+                    color: #ffffff;
                     z-index: 2;
                     transition: all 0.4s;
                 }
@@ -163,22 +159,21 @@ export default function Boutique() {
                     opacity: 1;
                 }
                 .btn-boutique-primary {
-                    background: var(--color-accent);
-                    color: var(--color-primary) !important;
-                    border: 1.5px solid var(--color-accent);
-                    border-radius: 30px;
-                    padding: 14px 38px;
-                    font-weight: 600;
-                    letter-spacing: 1.5px;
+                    background: transparent;
+                    color: #1a1a1a !important;
+                    border: 1px solid #1a1a1a;
+                    border-radius: 0px;
+                    padding: 16px 42px;
+                    font-weight: 500;
+                    letter-spacing: 2px;
                     text-transform: uppercase;
-                    font-size: 0.85rem;
+                    font-size: 0.8rem;
                     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
                     text-decoration: none;
                 }
                 .btn-boutique-primary:hover {
-                    background: transparent;
-                    color: var(--color-accent) !important;
-                    box-shadow: 0 8px 24px rgba(197, 160, 89, 0.2);
+                    background: #1a1a1a;
+                    color: #ffffff !important;
                 }
                 .btn-boutique-link {
                     color: var(--color-accent);
@@ -203,23 +198,23 @@ export default function Boutique() {
                 <div className="hero-border-frame"></div>
                 
                 <div className="container h-100 d-flex flex-column align-items-center justify-content-center text-center position-relative" style={{ zIndex: 10, padding: '0 1.5rem' }}>
-                    <span style={{ color: 'var(--color-accent)', fontWeight: 700, letterSpacing: '4px', textTransform: 'uppercase', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1.25rem' }}>
-                        <Sparkles size={14} /> The Retail Experience
+                    <span style={{ color: 'var(--color-accent)', fontWeight: 700, letterSpacing: '4px', textTransform: 'uppercase', fontSize: '0.75rem', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1.5rem' }}>
+                        The Retail Experience
                     </span>
                     <h1 
                         style={{ 
                             fontFamily: 'var(--font-serif)', 
-                            fontSize: 'clamp(2.5rem, 8vw, 4.8rem)', 
+                            fontSize: 'clamp(2.2rem, 7vw, 4.2rem)', 
                             lineHeight: 1.1, 
-                            color: 'var(--color-primary)', 
+                            color: '#1a1a1a', 
                             textTransform: 'uppercase', 
-                            letterSpacing: '0.12em',
-                            fontWeight: 400
+                            letterSpacing: '0.15em',
+                            fontWeight: 300
                         }}
                     >
                         it suits you better
                     </h1>
-                    <p style={{ fontSize: '1.05rem', maxWidth: '620px', margin: '1rem auto 2rem', color: 'var(--color-primary)', opacity: 0.85, lineHeight: 1.6 }}>
+                    <p style={{ fontSize: '1rem', maxWidth: '600px', margin: '1.5rem auto 3rem', color: 'rgba(26, 26, 26, 0.75)', lineHeight: 1.8, letterSpacing: '0.5px' }}>
                         Step into a realm of bespoke tailoring, antique weaves, and luxury silhouettes crafted meticulously for your personal stories.
                     </p>
                     <Link to="/shop" className="btn-boutique-primary">
