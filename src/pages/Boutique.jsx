@@ -36,18 +36,18 @@ export default function Boutique() {
                 <div className="boutique-hero-overlay"></div>
                 <div className="hero-border-frame"></div>
                 
-                <div className="container h-100 d-flex flex-column align-items-center justify-content-center text-center position-relative" style={{ zIndex: 10, padding: '0 1.5rem' }}>
-                    <span className="text-gold-accent mb-4 text-reveal delay-100">
-                        <Sparkles size={14} /> The Retail Experience
+                <div className="container h-100 d-flex flex-column align-items-center justify-content-center text-center position-relative" style={{ zIndex: 10, padding: '0 1.5rem', marginTop: '4rem' }}>
+                    <span className="text-gold-accent mb-4 text-reveal delay-100" style={{ letterSpacing: '6px', fontSize: '0.8rem' }}>
+                        <Sparkles size={14} style={{ marginRight: '8px' }} /> THE RETAIL EXPERIENCE
                     </span>
-                    <h1 className="hero-royal-title-premium text-reveal delay-300" style={{ fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', fontFamily: 'var(--font-serif)', lineHeight: 1.1, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-                        It Suits You Better
+                    <h1 className="hero-royal-title-premium text-reveal delay-300" style={{ fontSize: 'clamp(3rem, 10vw, 6rem)', fontFamily: 'var(--font-serif)', lineHeight: 1.0, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-text)', fontWeight: 400 }}>
+                        It Suits You <br/> Better
                     </h1>
-                    <p className="text-reveal delay-500" style={{ fontSize: '1.05rem', maxWidth: '600px', margin: '1.5rem auto 2.5rem', color: 'rgba(44, 30, 22, 0.65)', lineHeight: 1.8, letterSpacing: '0.5px', fontWeight: 300 }}>
+                    <p className="text-reveal delay-500" style={{ fontSize: '1.1rem', maxWidth: '550px', margin: '2rem auto 3rem', color: 'var(--color-text-light)', lineHeight: 1.8, letterSpacing: '0.5px', fontWeight: 300 }}>
                         Step into a realm of bespoke tailoring, antique weaves, and luxury silhouettes crafted meticulously for your personal stories.
                     </p>
                     <div className="text-reveal delay-700">
-                        <Link to="/shop" className="btn-cinematic-gold">
+                        <Link to="/shop" className="btn-gold-outline" style={{ padding: '16px 42px', fontSize: '0.8rem', letterSpacing: '3px' }}>
                             Explore Collection
                         </Link>
                     </div>
