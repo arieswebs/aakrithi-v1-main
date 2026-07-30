@@ -11,6 +11,7 @@ import shippingRouter from './routes/shipping.js';
 import checkoutRouter from './routes/checkout.js';
 import ordersRouter from './routes/orders.js';
 import userRouter from './routes/user.js';
+import adminRouter from './routes/admin.js';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -34,6 +35,7 @@ app.use('/api/shipping', shippingRouter);
 app.use('/api/checkout', checkoutRouter);
 app.use('/api/order', ordersRouter);
 app.use('/api/user', userRouter);
+app.use('/api/admin', adminRouter);
 
 // Serve static assets in production
 const distPath = path.join(__dirname, '../dist');
